@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -33,7 +35,7 @@
              <ul class="item">
                  <li><img src="./expert.png" style="width: 150px"></li>
                  <li>
-                     <a href=https://agency.expertphotoshop.ro target="_blank" ><img src="./animation.gif" width="40px"></li></a>
+                    <a href=https://agency.expertphotoshop.ro target="_blank"><div id="lottie-animation" style="width: 40px;"></div></li></a>
                  <li><img src="menu.svg" width="30px"></li>
              </ul>
         </div>
@@ -47,6 +49,16 @@
              </ul>
         </div>
      </div>
-</div> 
+</div>
+<script>
+    lottie.loadAnimation({
+      container: document.getElementById("lottie-animation"), // Target div
+      renderer: "svg", // Best for performance
+      loop: true, // Change to false if you want it to play once
+      autoplay: true, // Set to false if you want manual control
+      path: "animation.json", // Path to your Lottie JSON file
+    });
+  </script>
+  
 </body>
 </html>
