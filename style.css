@@ -1,0 +1,36 @@
+
+:root{
+    font-family: "poppins";
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.nav{
+    background:rgb(129,15,188) ;
+    width: 360px;
+    height: 600px;
+    
+}
+ul{
+    margin: 0;
+
+}
+li{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin: 0;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+   
+}
+
+dotlottie-player{
+    padding: -10px;
+}
